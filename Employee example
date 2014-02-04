@@ -1,0 +1,55 @@
+public class Empleado {
+    String Nombre;
+    int edad;
+    String designacion;
+    double salario;
+    
+    
+    public Empleado(String Nombre){
+        this.Nombre=Nombre;
+    }
+    
+    public void empEdad(int Aedad){
+        this.edad=Aedad;
+        
+    }
+    
+    public void empDesig(String empDes){
+        this.designacion=empDes;
+    }
+    
+    public void empSal(double emSal){
+        this.salario=emSal;
+    }
+    
+    //creamos un metodo donde capturaremos todos los datos
+    
+    public void Obtener(){
+        
+        System.out.println("Mi nombre es "+"--"+Nombre);
+        System.out.println("Mi edad es"+"--"+edad);
+        System.out.println("Mi desighacion es"+"--"+designacion);
+        System.out.println("Mi salario es"+"--"+salario);
+    }
+    
+    public static void main(String[] args) {
+        
+        Empleado emp=new Empleado("Jos");
+        emp.empEdad(23);
+        emp.empDesig("Software Enginner");
+        emp.empSal(12000);
+        emp.Obtener();
+        Empleado two=new Empleado("devb");
+        
+        two.empEdad(22);
+        two.empDesig("Medicine");
+        two.empSal(60000);
+        two.Obtener();
+        
+        
+        
+    }
+    
+    
+    
+}
